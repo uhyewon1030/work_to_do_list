@@ -1,4 +1,7 @@
+import {useEffect} from 'react';
+
 const MyPage = () => {
+
     return(
         <>
           <h1>My Page</h1>
