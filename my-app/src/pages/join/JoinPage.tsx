@@ -2,6 +2,7 @@ import React, {ChangeEvent, useState} from 'react';
 import {useNavigate} from 'react-router-dom'
 import moment from 'moment';
 import {Button, TextField} from '@mui/material';
+import {UserInputInterface} from 'interfaces/UserInputInterface';
 
 // FIREBASE
 import {firebaseAuth, fireStoreJob} from 'firebase-config';
@@ -14,12 +15,6 @@ interface UserInterface {
     email: string,
     displayName: string,
     date_created: string
-}
-
-interface UserInputInterface {
-    email: string,
-    displayName?: string,
-    password: string
 }
 
 const JoinPage = () => {
